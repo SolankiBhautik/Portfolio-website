@@ -13,7 +13,7 @@ const ProjectDetail = () => {
     useEffect(() => {
         let isMounted = true; 
     
-        fetch('records.json')
+        fetch('/records.json')
             .then(Response => Response.json())
             .then(data => {
                 const project = data.find(project => project.id == id);
