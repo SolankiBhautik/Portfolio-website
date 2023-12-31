@@ -11,7 +11,7 @@ const ProjectDetail = () => {
     const [data, setData] = useState({})
 
     useEffect(() => {
-        fetch('/data/records.json')
+        fetch('records.json')
             .then(Response => Response.json())
             .then(data => {
                 const project = data.find(project => project.id == id)

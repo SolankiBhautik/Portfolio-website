@@ -6,7 +6,7 @@ const Projects = () => {
     const [project, setProject] = useState([]);
 
     useEffect(() => {
-        fetch('data/records.json')
+        fetch('records.json')
             .then(response => response.json())
             .then(data => setProject(data))
             .catch(error => console.error('Error fetching projects:', error));
