@@ -3,11 +3,11 @@
     {
         "id": 0,
         "title": "Portfolio website",
-        "img_url": "assets/Project cover.png",
+        "img_url": "/src/assets/Project cover.png",
         "tech_stack":[
-            {"name": "react", "logo_url": "assets/react.svg"},
-            {"name": "tailwind", "logo_url": "assets/tailwind.svg"},
-            {"name": "json", "logo_url": "assets/json.svg"}
+            {"name": "react", "logo_url": "/src/assets/react.svg"},
+            {"name": "tailwind", "logo_url": "/src/assets/tailwind.svg"},
+            {"name": "json", "logo_url": "/src/assets/json.svg"}
         ],
         "about": "This portfolio website is a personal project that showcases my skills and experience as a front-end developer.It's built using React, a popular JavaScript library for building user interfaces, and Tailwind CSS, a utility-first CSS framework that provides a flexible and efficient way to style web pages. I chose this project as my first foray into React development to gain practical experience with these technologies and create a platform to highlight my work.",
 
