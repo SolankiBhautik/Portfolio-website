@@ -1,0 +1,15 @@
+    {
+        "id": 0,
+        "title": " ",
+        "img_url": "../../src/assets/",
+        "tech_stack":[
+            {"name": "", "logo_url": "../../src/assets/"},
+            {"name": "", "logo_url": "../../src/assets/"},
+            {"name": "", "logo_url": "../../src/assets/"}
+        ],
+        "abouttheproject": "#",
+        "process": "#",
+        "challenges": "#",
+        "livedemo": "#",
+        "coderepository": "#"
+    }

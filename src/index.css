@@ -1,0 +1,225 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+}
+
+.fade-in{
+  animation: fadeIn ease 2.4s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.open{
+  transform: translateX(0) !important ;
+
+}
+
+.blur_bg{
+  position: absolute;
+  background-color: hsl(178.79deg 100% 71.72% / 32%);
+  height: 200px;
+  width: 300px;
+  filter: blur(200px);
+}
+
+@media (min-width: 768px)
+{
+  .navbar{
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1f2527a3;
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background: #1f2527a3;
+    padding: 10vh 20vw;
+    backdrop-filter: blur(20px);
+    transform: translateX(100vw);
+    transition: transform 0.5s ease-in;
+  }
+}
+
+.heading1 {
+  color: #FFF;
+  text-align: center;
+  font-family: Syne;
+  font-size:  clamp(1.7em, 4.5vw, 3em);;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.heading2 {
+  color: #FFF;
+  font-family: Syne;
+  font-size: clamp(1.5em, 2.875vw, 2em);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.heading3{
+  color: #FFF;
+  font-family: Syne;
+  font-size: clamp(1.2em, 1.8vw, 1.7em);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+}
+
+.paragraph {
+  color: #A8A8A8;
+  font-family: Rubik;
+  font-size: clamp(0.7em, 1vw, 1.2em);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 154.5%; /* 27.81px */
+  letter-spacing: 0.99px;
+}
+
+nav .paragraph{
+  color: #A8A8A8;
+  font-family: Rubik;
+  font-size: clamp(0.8em, 1.3vw, 1.5em);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 154.5%; /* 27.81px */
+  letter-spacing: 0.99px;
+}
+
+.gradient-icon {
+  background: linear-gradient(to right, #009688, #42A5F5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav a {
+  color: white;
+  transition: all 0.3s ease-in !important;
+}
+
+nav a:hover {
+  background-image: linear-gradient(to right, #009688, #42A5F5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav a:focus,
+nav a:focus-visible {
+  background-image: linear-gradient(to right, #009688, #42A5F5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.active-link{
+  background-image: linear-gradient(to right, #009688, #42A5F5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.button1{
+  text-transform: uppercase;
+  padding: 0.6em 1.2em;
+  font-weight: 500;
+  font-size: clamp(1em, 1.5vw, 1.5em);;
+  letter-spacing: .15em;
+  background: #FF9142;
+  color: #FFF;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease-in;
+}
+
+.button1:hover{
+  outline: 4px solid #42A5F5;
+}
+
+.button1:focus,
+.button1:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.button1-low{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: clamp(1em, 1.5vw, 1.5em);;
+  letter-spacing: .15em;
+  background: #f9be94;
+  color: #FFF;
+  border-radius: 100vh;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: flex-start;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.image-container:hover .hover-text {
+  transform: translateY(0);
+}
