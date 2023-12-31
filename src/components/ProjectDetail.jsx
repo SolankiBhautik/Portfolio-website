@@ -14,11 +14,13 @@ const ProjectDetail = () => {
         fetch('records.json')
             .then(Response => Response.json())
             .then(data => {
-                const project = data.find(project => project.id == id)
-                setData(project)
+                console.log("Fetched data:", data); // Add this line
+                const project = data.find(project => project.id == id);
+                console.log("Specific project data:", project); // Add this line
+                setData(project);
             })
-            .catch(error => console.log("error while fetching project data:", error))
-    }, [id])
+            .catch(error => console.log("error while fetching project data:", error));
+    }, [id]);
 
     return (
         <div>
