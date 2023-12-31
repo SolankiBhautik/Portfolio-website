@@ -7,7 +7,6 @@ import { Heading } from './'
 const ProjectDetail = () => {
     const params = useParams()
     const id = params.id
-
     const [data, setData] = useState({})
 
     useEffect(() => {
