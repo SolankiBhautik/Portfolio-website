@@ -11,15 +11,21 @@ const ProjectDetail = () => {
     const [data, setData] = useState({})
 
     useEffect(() => {
+        let isMounted = true; 
+    
         fetch('records.json')
             .then(Response => Response.json())
             .then(data => {
-                console.log("Fetched data:", data); // Add this line
                 const project = data.find(project => project.id == id);
-                console.log("Specific project data:", project); // Add this line
-                setData(project);
+                if (isMounted) {
+                    setData(project);
+                }
             })
             .catch(error => console.log("error while fetching project data:", error));
+    
+        return () => {
+            isMounted = false; 
+        };
     }, [id]);
 
     return (
