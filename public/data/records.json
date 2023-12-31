@@ -3,7 +3,7 @@
     {
         "id": 0,
         "title": "Portfolio website",
-        "img_url": "/src/assets/Project cover.png",
+        "img_url": "../../src/assets/Project cover.png",
         "tech_stack":[
             {"name": "react", "logo_url": "/src/assets/react.svg"},
             {"name": "tailwind", "logo_url": "/src/assets/tailwind.svg"},
