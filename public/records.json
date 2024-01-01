@@ -15,7 +15,7 @@
 
         "challenges": "Learning Curve:\n* As my first React project, I faced challenges in understanding React concepts like components, state management, and routing.\n* Tailwind's utility-first approach required a shift in thinking about CSS.\n\nData Fetching:\n* Integrating data fetching from a JSON file involved learning about asynchronous operations and handling API responses.\n\nOvercoming Challenges:\n* Persistence and problem-solving skills were essential.\n* Utilized online resources, tutorials, and community forums for guidance.\n* Embraced trial and error as part of the learning process.",
         
-        "livedemo": "#",
-        "coderepository": "#"
+        "livedemo": "https://solankibhautik.netlify.app/",
+        "coderepository": "https://github.com/SolankiBhautik/Portfolio-website"
     }
 ]
