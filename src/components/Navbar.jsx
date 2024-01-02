@@ -7,9 +7,9 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     
     return (
-        <nav className='flex flex-row justify-between items-center z-10 my-1 sm:my-4 '>
+        <nav className='flex flex-row justify-between items-center z-10 my-0 sm:my-4 '>
             <div>
-                <Link to="/"><img src={logo} alt="Brand-logo" className='w-[200px] md:m-0 m-3'/> </Link>
+                <Link to="/"><img src={logo} alt="Brand-logo" className='w-[200px] md:m-0 m-3'/></Link>
             </div>
             <div className={`z-10 navigation md:flex  items-center gap-8 ${isOpen ? 'open' : ' '}`}>
                 <Link to="/" className='text-[14px] paragraph'>HOME</Link>
