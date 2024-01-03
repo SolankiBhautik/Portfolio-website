@@ -30,7 +30,7 @@
         {
           "name": "Tailwind CSS",
           "logo_url": "../../src/assets/tailwind.svg"
-        },
+        }
       ],
       "abouttheproject": "A single-page frontend mockup of a banking website for the fictional company HooBank. Built with React and Tailwind CSS.",
       "process": "This project was built using React and Tailwind CSS. The primary goal of this project was to create a single-page frontend mockup of a banking website for the fictional company HooBank. The project was developed using a component-based architecture, with React Router for navigation and routing. Tailwind CSS was used for styling, with custom CSS for additional styling. The project was designed in Figma, with the design files integrated into the development workflow.",
