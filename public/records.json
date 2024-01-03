@@ -21,15 +21,15 @@
     {
       "id": 1,
       "title": "HooBank",
-      "img_url": "../../src/assets/hoobank.png",
+      "img_url": "/images/hoobank.png",
       "tech_stack": [
         {
           "name": "React",
-          "logo_url": "../../src/assets/react.svg"
+          "logo_url": "/images/react.svg"
         },
         {
           "name": "Tailwind CSS",
-          "logo_url": "../../src/assets/tailwind.svg"
+          "logo_url": "/images/tailwind.svg"
         }
       ],
       "abouttheproject": "A single-page frontend mockup of a banking website for the fictional company HooBank. Built with React and Tailwind CSS.",
