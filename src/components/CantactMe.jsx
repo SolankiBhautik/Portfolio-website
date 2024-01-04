@@ -52,7 +52,7 @@ const CantactMe = () => {
             <div className='flex flex-col mb-8'>
               <label htmlFor="email" className='text-white text-2xl font-medium font-[Rubik] uppercase'>Email</label>
               <input required autoFocus type="email" value={email} onChange={handleEmailChange} id='email'placeholder="Enter your email address" 
-              className={`${isValidEmail ? 'outline outline-offset-2 outline-4 outline-green-400' : 'outline outline-offset-2 outline-4 outline-red-400'} border-b bg-inherit border-neutral-400 rounded-br-lg p-1 text-lg`}/>
+              className={`${isValidEmail ? 'outline outline-offset-2 outline-4 outline-green-400' : 'outline outline-offset-2 outline-2 outline-red-400'} border-b bg-inherit border-neutral-400 rounded-br-lg p-1 text-lg`}/>
             </div>
             <div className='flex flex-col mb-8'>
               <label htmlFor="subject" className='text-white text-2xl font-medium font-[Rubik] uppercase'>Name</label>

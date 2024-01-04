@@ -17,14 +17,14 @@ const Projects = () => {
             <div className='flex flex-col'>
                 <h2 className='heading2 text-center'>My Projects Highlight</h2>
             </div>
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 place-items-center'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 items-start'>
                 {
                     project.map((project) => (
                         <div key={project.id} className='flex items-center justify-center my-5'>
                             <div className='w-fit'>
                                 <Link to={`/ProjectDetail/${project.id}`} key={project.id}>
                                     <div className="image-container">
-                                        <img src={project.img_url} alt={project.title} className='hover:opacity-60 transition rounded rounded-tr-[16px] object-contain flex-none w-[360px]' />
+                                        <img src={project.img_url} alt={project.title} className='hover:opacity-60 transition duration-300 rounded rounded-tr-[16px] object-contain flex-none w-[360px]' />
                                         <div className="hover-text">Click for more details</div>
                                     </div>
                                 </Link>

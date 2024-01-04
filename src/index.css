@@ -66,6 +66,22 @@ body {
   }
 }
 
+.navigation a{
+  padding: 2px 16px;
+  transition:  300ms ease;
+  transition-property: color, border-color ;
+  border: 1px solid transparent;
+}
+
+.navigation a:hover{
+  color: #FF9142;
+}
+
+.navigation .active{
+  border: #FF9142 1px solid;
+  border-radius: 4px;
+}
+
 .heading1 {
   color: #FFF;
   text-align: center;
