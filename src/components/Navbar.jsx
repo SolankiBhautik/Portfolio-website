@@ -13,7 +13,7 @@ const Navbar = () => {
             </div>
             <div className={`z-10 navigation md:flex  items-center gap-1 ${isOpen ? 'open' : ' '}`}>
                 <NavLink to="/" className='text-[14px] paragraph'>HOME</NavLink>
-                <HashLink to="/#project" className='text-[14px] paragraph'>WORK</HashLink>
+                <HashLink to="/#project" className='text-[14px] paragraph !scroll-smooth	'>WORK</HashLink>
                 <NavLink to="/AboutMe"  className='text-[14px] paragraph'>ABOUT ME</NavLink>
                 <NavLink to="/CantactMe" className='text-[14px] paragraph'>CONTECT ME</NavLink>
             </div>

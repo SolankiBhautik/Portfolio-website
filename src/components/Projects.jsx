@@ -1,16 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { db } from '../config/firebase-config';
+import { getDocs, collection } from 'firebase/firestore';
 
 const Projects = () => {
     const [project, setProject] = useState([]);
 
+    const collref = collection(db, "projects");
+
     useEffect(() => {
-        fetch('records.json')
-            .then(response => response.json())
-            .then(data => setProject(data))
-            .catch(error => console.error('Error fetching projects:', error));
-    }, []);
+        const getlist =  async () => {
+            try{
+                const data = await getDocs(collref);
+                const fdata = data.docs.map(doc => (
+                    {
+                        ...doc.data()
+                    }
+                ));
+                setProject(fdata);
+
+            } catch (error) {
+                console.log("getdoc error: ", error);
+            }
+            
+        }
+        getlist();
+    }, [])
+
 
     return (
         <div className=' mt-10 scroll-mt-40' id='project'>
@@ -24,7 +40,7 @@ const Projects = () => {
                             <div className='w-fit'>
                                 <Link to={`/ProjectDetail/${project.id}`} key={project.id}>
                                     <div className="image-container">
-                                        <img src={project.img_url} alt={project.title} className='hover:opacity-60 transition duration-300 rounded rounded-tr-[16px] object-contain flex-none w-[360px]' />
+                                        <img src={project.img_url} alt={project.title} className='hover:opacity-60 transition duration-300 rounded rounded-tr-[16px] object-contain flex-none w-[360px] relative' />
                                         <div className="hover-text">Click for more details</div>
                                     </div>
                                 </Link>

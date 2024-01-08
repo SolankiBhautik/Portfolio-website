@@ -1,8 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Navbar, Hero, AboutMe, Projects, Testimonial, Footer, CantactMe, AboutMePage, ProjectDetail   } from './components'
 import ScrollToTop from './components/ScrollToTop'
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 
 function App() {
   return (

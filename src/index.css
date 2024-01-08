@@ -188,6 +188,7 @@ h1 {
 .hover-text {
   position: absolute;
   bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -196,6 +197,10 @@ h1 {
   transition: transform 0.3s ease;
   padding: 10px 0;
   text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-container:hover .hover-text {
